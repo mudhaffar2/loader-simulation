@@ -23,6 +23,7 @@
     "browserify": "^14.4.0",
     "cp": "^0.2.0",
     "mkdirp": "^0.5.1",
-    "node-sass": "^4.5.3"
+    "node-sass": "^4.5.3",
+    "simulate-progress": "zeropaper/xt-simulate-progress"
   }
 }

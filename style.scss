@@ -1,14 +1,18 @@
 
 
 .loader {
+
   background-color: #999;
   max-width: 300px;
   height: 24px;
   border-radius: 50%;
+
+  .progress {
+    background-color: #333;
+    margin: 2px;
+  }
+  
 }
 
-.loader .progress {
-  background-color: #333;
-  margin: 2px;
-}
+
 
