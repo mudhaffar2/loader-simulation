@@ -6,8 +6,8 @@
   "main": "index.js",
   "scripts": {
     "test": "jshint index.js",
-    "prebuild": "jshint && mkdirp docs && cp index.html docs/",
-    "build": "browserify index.js -o docs/bundle.js && node-sass style.scss docs/style.css",
+    "prebuild": "jshint && mkdirp docs && cp src/index.html docs/",
+    "build": "browserify src/index.js -o docs/bundle.js && node-sass src/style.scss docs/style.css",
     "postbuild": "uglifyjs docs/bundle.js -o docs/bundle.js"
   },
   "repository": {
