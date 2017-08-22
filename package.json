@@ -5,7 +5,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jshint index.js",
     "prebuild": "jshint && mkdirp docs && cp index.html docs/",
     "build": "browserify index.js -o docs/bundle.js && node-sass style.scss docs/style.css"
   },
