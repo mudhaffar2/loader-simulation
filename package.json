@@ -7,7 +7,8 @@
   "scripts": {
     "test": "jshint index.js",
     "prebuild": "jshint && mkdirp docs && cp index.html docs/",
-    "build": "browserify index.js -o docs/bundle.js && node-sass style.scss docs/style.css"
+    "build": "browserify index.js -o docs/bundle.js && node-sass style.scss docs/style.css",
+    "postbuild": "uglify-js docs/bundle.js -o docs/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "browserify": "^14.4.0",
     "jshint": "latest",
+    "uglify-js": "latest",
     "cp": "^0.2.0",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.5.3",
