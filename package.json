@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "prebuild": "mkdirp docs && cp index.html docs/",
+    "prebuild": "jshint && mkdirp docs && cp index.html docs/",
     "build": "browserify index.js -o docs/bundle.js && node-sass style.scss docs/style.css"
   },
   "repository": {
@@ -21,6 +21,7 @@
   "homepage": "https://github.com/mudhaffar2/loader-simulation#readme",
   "devDependencies": {
     "browserify": "^14.4.0",
+    "jshint": "latest",
     "cp": "^0.2.0",
     "mkdirp": "^0.5.1",
     "node-sass": "^4.5.3",

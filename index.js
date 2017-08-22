@@ -1,3 +1,5 @@
+/* jshint browserify: true */
+
 
 var simulateProgress = require('simulate-progress');
 var loaderEl = document.querySelector('.loader');
